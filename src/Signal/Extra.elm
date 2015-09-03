@@ -293,7 +293,7 @@ sampleWhen bs def sig =
   |> map snd
 
 
-{-| Like `keepWhen`, but when the filter signal turn `False`, the output
+{-| Like `sampleWhen`, but when the filter signal turn `False`, the output
 changes back to the base value. 
 -}
 keepThen : Signal Bool -> a -> Signal a -> Signal a
